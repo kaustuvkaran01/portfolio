@@ -21,6 +21,12 @@ module.exports = {
         ".vertical-lr": {
           writingMode: "vertical-lr",
         },
+        ".sideways-lr":{
+          writingMode:"sideways-lr",
+        },
+        ".sideways-rl":{
+          writingMode:"sideways-rl",
+        },
       };
       addUtilities(newUtilities);
     }),
