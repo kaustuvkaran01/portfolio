@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../logo.svg";
+// import logo from "../logo.svg";
 export default function Navbar() {
   return (
     <div className="flex flex-wrap py-4 top-0 bg-blue-900 min-w-full">
