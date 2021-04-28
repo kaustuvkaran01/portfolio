@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Linkedin, Github } from "react-feather";
+import { Instagram, Linkedin } from "react-feather";
 
 export default function Links() {
   return (
