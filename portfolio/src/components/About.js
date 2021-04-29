@@ -4,7 +4,7 @@ import img1 from '../images/img1.JPG';
 
 export default function About() {
   return (
-    <div className="w-full flex flex-wrap justify-evenly bg-blue-900 py-20">
+    <div className="w-full flex flex-wrap justify-evenly py-20">
       <div className="text-left space-y-6 w-1/2">
         <div className="text-3xl text-gray-100">01. About Me</div>
         <div className="text-lg text-justify space-y-6">
@@ -24,7 +24,7 @@ export default function About() {
           </div>
           <div className="text-gray-400">
               Here are a few things I've been working with recently:
-              <ul className="list-decimal text-green-400 grid">
+              <ul className="list-disc text-green-400">
                   <li>
                       JavaScript (ES6+) 
                   </li>
@@ -44,7 +44,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="bg-blue-900 w-1/3 text-center items-center pt-10 align-middle filter backdrop-blur-sm hover:filter-none hover:backdrop-blur-0 rounded-lg">
+      <div className="w-1/3 text-center items-center pt-10 align-middle filter backdrop-blur-sm hover:filter-none hover:backdrop-blur-0 rounded-lg">
         <img className="rounded-lg" src={img1} alt="profile" />
       </div>
     </div>

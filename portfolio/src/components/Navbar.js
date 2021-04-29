@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from "../logo.svg";
 export default function Navbar() {
   return (
-    <div className="flex flex-wrap py-4 top-0 bg-blue-900 min-w-full">
+    <div className="flex flex-wrap py-4 top-0 min-w-full">
       <div className="w-full px-4">
         <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-teal-500 rounded font-fira-code">
-          <div className="container px-4 mx-auto flex flex-wrap items-center justify-between text-green-400">
+          <div className="container px-4 mx-auto flex flex-wrap items-center justify-between text-green-400 ">
             <div className="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
               <a
                 className="text-sm  leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-green"
@@ -29,7 +28,7 @@ export default function Navbar() {
               <ul className="flex flex-col lg:flex-row list-none ml-auto space-x-6">
                 <li className="nav-item">
                   <a
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green hover:opacity-75"
+                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
                     href="#pablo"
                   >
                     01. About
@@ -37,7 +36,7 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green hover:opacity-75"
+                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
                     href="#pablo"
                   >
                     02. Experience
@@ -45,7 +44,7 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green hover:opacity-75"
+                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
                     href="#pablo"
                   >
                     03. Work
@@ -53,15 +52,15 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green hover:opacity-75"
+                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
                     href="#pablo"
                   >
                     04. Contact
                   </a>
                 </li>
-                <li className="nav-item rounded border-2 border-red-500 border-solid">
+                <li className="nav-item rounded-sm ring-2 ring-green-400 ring-opcaity-25 ring-offset-2">
                   <a
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green hover:opacity-75"
+                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
                     href="#pablo"
                   >
                     Resume

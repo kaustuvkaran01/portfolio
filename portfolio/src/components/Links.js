@@ -1,14 +1,15 @@
 import React from "react";
-import { Instagram, Linkedin, Github } from "react-feather";
+import { Instagram, Linkedin, GitHub } from "react-feather";
 
 export default function Links() {
   return (
-    <div className="bg-blue-900 absolute bottom-0 left-0 text-blue-300 sideways-rl p-10 pb-20 space-y-6">
+    <div className="absolute bottom-0 left-0 text-blue-300 sideways-rl p-10 pb-20 space-y-6">
       {/* <Github /> */}
-      <button>
+      <a href="https://instagram/">
         <Instagram />
-      </button>
+      </a>
       <Linkedin />
+      <GitHub />
       <br />
     </div>
   );
