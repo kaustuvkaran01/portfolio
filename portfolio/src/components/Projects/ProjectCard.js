@@ -18,7 +18,7 @@ export default function ProjectCard() {
         <div className=" text-left">
           Building a custom multisite compatible WordPress plugin to build global search with Algolia
         </div>
-        <div className="grid grid-cols-3 gap-2 place-items-start justify-between align-left">
+        <div className="grid grid-cols-3 gap-2 place-items-start justify-between align-left text-opacity-10">
           <div>
             Algolia
           </div>
