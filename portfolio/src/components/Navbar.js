@@ -1,7 +1,7 @@
 import React from 'react';
 export default function Navbar() {
   return (
-    <div className="flex flex-wrap py-4 top-0 min-w-full">
+    <div className="fixed opcaity-100 bg-black flex flex-wrap py-4 top-0 min-w-full">
       <div className="w-full px-4">
         <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-teal-500 rounded font-fira-code">
           <div className="container px-4 mx-auto flex flex-wrap items-center justify-between text-green-400 ">

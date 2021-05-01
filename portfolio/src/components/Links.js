@@ -5,15 +5,16 @@ export default function Links() {
   return (
     <div className="fixed bottom-0 left-0 text-blue-300 sideways-rl p-10 grid grid-rows-3 gap-9">
       {/* <Github /> */}
-      <a href="https://www.instagram.com/karankaustuv/">
-        <Instagram />
+      <a href="https://github.com/kaustuvkaran01">
+        <GitHub />
       </a>
       <a href="https://www.linkedin.com/in/kaustuvkaran/">
         <Linkedin />
       </a>
-      <a href="https://github.com/kaustuvkaran01">
-        <GitHub />
+      <a href="https://www.instagram.com/karankaustuv/">
+        <Instagram />
       </a>
+      <div className="border border-green-400"></div>
       <br />
     </div>
   );

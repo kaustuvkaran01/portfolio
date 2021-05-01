@@ -4,11 +4,11 @@ import img1 from '../images/img1.JPG';
 
 export default function About() {
   return (
-    <div className="w-full flex flex-wrap justify-evenly py-20">
-      <div className="text-left space-y-6 w-1/2">
+    <div className="lg:w-full flex flex-wrap justify-evenly lg:py-20 lg:flex-row sm:flex-col-reverse">
+      <div className="text-left space-y-6 lg:w-1/2">
         <div className="text-3xl text-gray-100">01. About Me</div>
-        <div className="text-lg text-justify space-y-6">
-          <div className="text-gray-400">
+        <div className="text-lg text-justify space-y-6 sm:max-w-xs lg:max-w-xl">
+          <div className="text-gray-400 ">
             Hello! My name is Brittany and I enjoy creating things that live on
             the internet. My interest in web development started back in 2012
             when I decided to try editing custom Tumblr themes — turns out
