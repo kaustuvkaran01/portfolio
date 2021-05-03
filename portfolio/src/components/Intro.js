@@ -11,6 +11,7 @@ export default function Intro() {
         occasionally designing) exceptional digital experiences. Currently, I'm
         an engineer at Upstatement focused on building accessible,
         human-centered products.
+        I'm a sophomore at Thapar Institute of Engineering and Technology who likes to build websites with real life impact. Currently, I'm learning GraphQL and refining my command over Express.js.
       </div>
       <div className="px-0 p-4 rounded-lg text-lg w-40 text-center ring-4 ring-green-500  text-green-500">Get in touch</div>
     </div>
