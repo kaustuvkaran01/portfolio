@@ -9,18 +9,10 @@ export default function About() {
         <div className="text-3xl text-gray-100">01. About Me</div>
         <div className="text-lg text-justify space-y-6 sm:max-w-xs lg:max-w-xl">
           <div className="text-gray-400 ">
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Hello! My name is Kaustuv and I enjoy creating things that live on the internet. My interest in web development started back in my first year of college(2018), when one of my friends showed me a highly interactive site that he built using simple HTML and CSS. I did not even know CSS existed back then. We participated in a hackathon together and somehow won. This was such a major boost for me that I thought why not keep doing this? So we kept building things and here I am.
           </div>
           <div className="text-gray-400">
-            Fast-forward to today, and I've had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Fast-forward to today. I've had the priviledge of helping the local municipal corporation gather data for slum areas using a web app that I built and also an NGO to setup their fully functioning website. My main focus these days is learning to scale projects. I would love to work at Microsoft one day.
           </div>
           <div className="text-gray-400">
               Here are a few things I've been working with recently:
