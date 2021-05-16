@@ -9,18 +9,12 @@ export default function About() {
         <div className="text-3xl text-gray-100">01. About Me</div>
         <div className="text-lg text-justify space-y-6 sm:max-w-xs lg:max-w-xl">
           <div className="text-gray-400 ">
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Hello! My name is Kaustuv and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2018
+            when I met a complete stranger turned very dear friend in my first year of grad-school who had a similar interest in technology.
           </div>
           <div className="text-gray-400">
-            Fast-forward to today, and I've had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Fast-forward to today, and I've had the privilege of winning multiple hackathons, building a project for the Municipal Corporation of the city, building a website for the betterment of society(for a NGO) and conducted multiple workshops on React and Decision Tree Networks for the improvement of the standards of the college.
           </div>
           <div className="text-gray-400">
               Here are a few things I've been working with recently:
@@ -38,7 +32,7 @@ export default function About() {
                       GraphQl
                   </li>
                   <li>
-                      Pytorch
+                      Python and Data Science
                   </li>
               </ul>
           </div>

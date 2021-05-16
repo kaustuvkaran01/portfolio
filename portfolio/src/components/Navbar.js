@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 export default function Navbar() {
   return (
     <div className="fixed opcaity-100 bg-black flex flex-wrap py-4 top-0 min-w-full">
@@ -8,7 +9,7 @@ export default function Navbar() {
             <div className="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
               <a
                 className="text-sm  leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-green"
-                href="#pablo"
+                href=""
               >
                 K
               </a>
@@ -27,12 +28,12 @@ export default function Navbar() {
             >
               <ul className="flex flex-col lg:flex-row list-none ml-auto space-x-6">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
-                    href="#pablo"
+                    to="/"
                   >
                     01. About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a
@@ -61,7 +62,7 @@ export default function Navbar() {
                 <li className="nav-item rounded-sm ring-2 ring-green-400 ring-opcaity-25 ring-offset-2">
                   <a
                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-green-400 hover:opacity-75"
-                    href="#pablo"
+                    href="https://drive.google.com/file/d/1BYWd-gU83wiL67icmYeN1knLlDM04YtZ/view?usp=sharing"
                   >
                     Resume
                   </a>
