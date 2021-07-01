@@ -5,9 +5,9 @@ export default function Frameworks() {
     <>
     {/* TODO: Replace them with colored icons */}
     <section class="dark:bg-coolGray-800 dark:text-coolGray-100">
-	<div class="container p-6 lg:px-10 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
-		<h2 class="text-3xl font-bold">Languages, that I am familiar with</h2>
-		<div class="flex flex-wrap justify-center lg:justify-between">
+	<div class="container p-6 lg:px-10 justify-center mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
+		<h2 class="text-3xl font-bold">Libraries/Frameworks</h2>
+		<div class="flex flex-wrap justify-center lg:justify-evenly">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-coolGray-400">
 				<title>Angular</title>
 				<path d="M13.24 16.859h5.51l-2.755-6.542zM15.995 0.010l-15.078 5.307 2.297 19.677 12.781 6.995 12.786-6.984 2.297-19.688-15.083-5.302zM25.406 24.406h-3.516l-1.896-4.667h-8l-1.896 4.667h-3.516l9.411-20.865z"></path>

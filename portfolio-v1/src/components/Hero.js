@@ -1,37 +1,52 @@
 import React from "react";
-
+import heroimg from '../images/heroimg.JPG';
+import Typewriter from "typewriter-effect";
+import {Link} from 'react-router-dom'
 export default function Hero() {
   return (
     <div>
-      <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-24 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Hi! I am Kaustuv!
-              <br class="hidden lg:inline-block" />
-              And I write code in
+      <section class="dark:bg-coolGray-800 dark:text-coolGray-100">
+        <div class="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-evenly">
+          <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 class="text-5xl font-bold leading-none sm:text-6xl">Hi!<br /> I am Kaustuv!<br />
+              <span class="dark:text-yellow-400">I write</span>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('<strong><span style={{color:"neon"}} >JavaScript</span></strong>')
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("C++")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("R")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("HTML")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("CSS")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("React.Js")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Python")
+                    .pauseFor(1000)
+                    .start();
+                }}
+              />
             </h1>
-            <p class="mb-8 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+            <p class="mt-6 mb-8 text-lg sm:mb-12">Been doing magic with code since 2017
+              <br class="hidden md:inline lg:no-hidden" />Love to do stuff
             </p>
-            <div class="flex justify-center">
-              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Github
-              </button>
-              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Linkedin
-              </button>
+            <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+              <button class="px-8 py-3 text-lg font-semibold rounded bg-yellow-400 text-black"><Link>Github</Link></button>
+              <button class="px-8 py-3 text-lg font-semibold border rounded border-yellow-300"><Link>LinkedIn</Link></button>
             </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="https://source.unsplash.com/photos/bXfQLglc81U"
-            />
+          <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img src={heroimg} alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
           </div>
         </div>
       </section>
