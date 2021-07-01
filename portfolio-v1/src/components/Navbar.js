@@ -12,7 +12,7 @@ export default function Navbar() {
         <header className="px-4 text-basic-blue bg-gray-100 fixed z-50 pt-2 w-full">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex">
-            <Link to="/#" className="flex items-center p-2">
+            <Link to="/" className="flex items-center p-2">
               <motion.span
                 initial={{ y: -250 }}
                 animate={{ y: 0 }}
@@ -38,7 +38,7 @@ export default function Navbar() {
                 }}
               >
                 <Link
-                  to="/#"
+                  to="/"
                   className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
                 >
                   About
@@ -56,7 +56,7 @@ export default function Navbar() {
                 className="flex"
               >
                 <Link
-                  to="/#"
+                  to="/"
                   className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
                 >
                   Skills
@@ -74,7 +74,7 @@ export default function Navbar() {
                 }}
               >
                 <Link
-                  to="/#"
+                  to="/"
                   className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
                 >
                   Projects
@@ -92,7 +92,7 @@ export default function Navbar() {
                 }}
               >
                 <Link
-                  to="/#"
+                  to="/"
                   className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
                 >
                   Experience
@@ -110,7 +110,7 @@ export default function Navbar() {
                 }}
               >
                 <Link
-                  to="/#"
+                  to="/"
                   className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
                 >
                   Contact Me
@@ -140,7 +140,7 @@ export default function Navbar() {
               stiffness: 25,
             }}
           >
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://kaustuvkaran01.netlify.app" target="_blank" rel="noreferrer">
               <button className="px-8 py-3 font-semibold rounded border-2 border-basic-blue text-basic-blue outline-none">
                 Resume
               </button>
