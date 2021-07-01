@@ -22,7 +22,7 @@ export default function Navbar() {
                   stiffness: 25,
                 }}
               >
-                <img src="https:google.co.in" className="w-8 h-8 text-yellow-300" alt="" />
+                <img src="https://source.unsplash.com/collection/190727/1600x900" className="w-8 h-8 text-yellow-300" alt="" />
               </motion.span>
             </Link>
             <ul className="items-stretch hidden space-x-3 lg:flex">
