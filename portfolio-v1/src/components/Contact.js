@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Contact() {
+import contactme from '../images/contact.svg';
+
+function Contact() {
   return (
     <>
       <div class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-coolGray-800 dark:text-coolGray-100">
@@ -15,7 +17,7 @@ export default function Contact() {
           </div>
           {/* TODO: Replace svg with actual svg(taken from Mamba UI)*/}
           <img
-            src="assets/svg/doodle.svg"
+            src={contactme}
             alt="Contact our customer support"
             class="p-6 h-52 md:h-64"
           />
@@ -29,7 +31,7 @@ export default function Contact() {
               id="name"
               type="text"
               placeholder=""
-              class="w-full p-3 rounded dark:bg-coolGray-800"
+              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-yellow-300"
             />
           </div>
           <div>
@@ -39,7 +41,7 @@ export default function Contact() {
             <input
               id="email"
               type="email"
-              class="w-full p-3 rounded dark:bg-coolGray-800"
+              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-yellow-300"
             />
           </div>
           <div>
@@ -49,12 +51,12 @@ export default function Contact() {
             <textarea
               id="message"
               rows="3"
-              class="w-full p-3 rounded dark:bg-coolGray-800"
+              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-yellow-300"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-yellow-400 dark:text-coolGray-900"
+            class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-yellow-400 text-black-300"
           >
             Send Message
           </button>
@@ -63,3 +65,6 @@ export default function Contact() {
     </>
   );
 }
+
+
+export default Contact;
