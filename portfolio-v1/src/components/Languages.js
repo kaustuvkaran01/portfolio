@@ -15,7 +15,7 @@ export default function Languages() {
 	<div class="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 lg:flex lg:flex-row lg:flex-wrap lg:justify-center">
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-				<img src={cpp} alt="cpp" />
+				<img src={cpp} alt="cpp svg" />
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">C++</p>
@@ -24,7 +24,7 @@ export default function Languages() {
 		</div>
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-				<img src={jssvg} atl="js"/>
+				<img src={jssvg} atl="js svg"/>
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">JavaScript</p>
@@ -33,7 +33,7 @@ export default function Languages() {
 		</div>
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-				<img src={pythonsvg} alt="python"/>
+				<img src={pythonsvg} alt="python svg"/>
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">Python</p>
@@ -42,7 +42,7 @@ export default function Languages() {
 		</div>
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-			<img src={r} alt="r"/>
+			<img src={r} alt="r language"/>
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">R</p>
@@ -51,7 +51,7 @@ export default function Languages() {
 		</div>
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-			<img src={html} alt="html"/>
+			<img src={html} alt="html svg"/>
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">HTML</p>
@@ -60,7 +60,7 @@ export default function Languages() {
 		</div>
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-			<img src={css} alt="css"/>
+			<img src={css} alt="css svg"/>
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">CSS</p>

@@ -4,10 +4,10 @@ export default function MainProjects() {
   return (
     <>
     <section class=" bg-gray-200 text-gray-600 body-font">
-      <h2>Main Projects</h2>
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3">
+      {/* <h2 className="py-6 justify-self-auto">Main Projects</h2> */}
+    <div class="flex flex-wrap -m-4 justify-evenly">
+      <div class="p-4 md:w-1/4">
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog" />
           <div class="p-6">
@@ -36,7 +36,7 @@ export default function MainProjects() {
           </div>
         </div>
       </div>
-      <div class="p-4 md:w-1/3">
+      <div class="p-4 md:w-1/4">
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog" />
           <div class="p-6">
@@ -65,7 +65,7 @@ export default function MainProjects() {
           </div>
         </div>
       </div>
-      <div class="p-4 md:w-1/3">
+      <div class="p-4 md:w-1/4">
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog" />
           <div class="p-6">

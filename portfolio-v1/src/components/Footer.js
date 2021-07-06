@@ -1,6 +1,6 @@
 import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {FaGithubAlt, FaInstagram, FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa';
+import {FaGithubAlt, FaTwitter, FaLinkedin} from 'react-icons/fa';
 import {FiMail} from 'react-icons/fi';
 export default function Footer() {
   return (
