@@ -3,7 +3,7 @@ import React from 'react';
 export default function MainProjects() {
   return (
     <>
-    <section class="text-gray-600 body-font">
+    <section class=" bg-gray-200 text-gray-600 body-font">
       <h2>Main Projects</h2>
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">

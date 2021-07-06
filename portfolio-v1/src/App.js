@@ -9,7 +9,7 @@ import Error from './pages/Error';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-200">
       <Router>
         <Navbar />
         <Switch>

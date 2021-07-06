@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 // import logo from "../assets/logo.svg";
 // import Pdf from "../assets/resume-website.pdf";
-// import Sidebar from "./sidebar/sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 
 export default function Navbar() {
   return (
     <div>
-        <header className="px-4 text-basic-blue bg-gray-100 fixed z-50 pt-2 w-full">
+        <header className="px-8 text-basic-blue bg-gray-200 fixed z-50 pt-2 w-full">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex">
             <Link to="/" className="flex items-center p-2">
@@ -146,9 +146,9 @@ export default function Navbar() {
               </button>
             </a>
           </motion.div>
-          {/* <button className="p-4 lg:hidden">
+          <button className="p-4 lg:hidden">
             <Sidebar />
-          </button> */}
+          </button>
         </div>
       </header>
     </div>

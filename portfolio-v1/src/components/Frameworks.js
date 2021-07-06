@@ -4,7 +4,7 @@ export default function Frameworks() {
   return (
     <>
     {/* TODO: Replace them with colored icons */}
-    <section class="dark:bg-coolGray-800 dark:text-coolGray-100">
+    <section class="bg-gray-200 dark:text-coolGray-100">
 	<div class="container p-6 lg:px-10 justify-center mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
 		<h2 class="text-3xl font-bold">Libraries/Frameworks</h2>
 		<div class="flex flex-wrap justify-center lg:justify-evenly">

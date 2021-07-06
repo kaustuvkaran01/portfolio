@@ -12,7 +12,7 @@ function Contact() {
               Let's talk!
             </h2>
             <div class="dark:text-coolGray-400">
-              Vivamus in nisl metus? Phasellus.
+              I would love to hear from you!
             </div>
           </div>
           {/* TODO: Replace svg with actual svg(taken from Mamba UI)*/}

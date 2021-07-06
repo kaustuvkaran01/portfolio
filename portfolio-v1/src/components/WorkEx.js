@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function WorkEx() {
   return (
-    <>
+    <div className="m-10">
     {/* TODO: Make tabs for this section, tabs according to organizations */}
     {/* TODO: Correct the timeline and fill in the content */}
-    <ul class="p-4 lg:p-8 dark:bg-coolGray-800 dark:text-coolGray-100">
+    <ul class="p-6 lg:p-8 dark:bg-coolGray-800 dark:text-coolGray-100">
 	<li>
 		<article>
 			<a href="https://kaustuvkaran01.netlify.app" class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-coolGray-900">
@@ -43,6 +43,6 @@ export default function WorkEx() {
 		</article>
 	</li>
 </ul>
-    </>
+    </div>
   );
 }
