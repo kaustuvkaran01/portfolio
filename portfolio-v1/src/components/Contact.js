@@ -1,6 +1,6 @@
 import React from "react";
 
-import contactme from '../images/contact.svg';
+import contactme from '../images/contact2.svg';
 
 function Contact() {
   return (
@@ -31,7 +31,7 @@ function Contact() {
               id="name"
               type="text"
               placeholder=""
-              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-yellow-300"
+              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-purple-700"
             />
           </div>
           <div>
@@ -41,7 +41,7 @@ function Contact() {
             <input
               id="email"
               type="email"
-              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-yellow-300"
+              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-purple-700"
             />
           </div>
           <div>
@@ -51,12 +51,12 @@ function Contact() {
             <textarea
               id="message"
               rows="3"
-              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-yellow-300"
+              class="w-full p-3 rounded dark:bg-coolGray-800 border-2 border-solid border-purple-700"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-yellow-400 text-black-300"
+            class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-purple-700 text-gray-200"
           >
             Send Message
           </button>
