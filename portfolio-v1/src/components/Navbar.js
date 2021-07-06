@@ -22,7 +22,7 @@ export default function Navbar() {
                   stiffness: 25,
                 }}
               >
-                <img src="https://source.unsplash.com/collection/190727/1600x900" className="w-8 h-8 text-yellow-300" alt="" />
+                <img src="https://source.unsplash.com/collection/190727/1600x900" className="w-8 h-8 text-purple-700" alt="" />
               </motion.span>
             </Link>
             <ul className="items-stretch hidden space-x-3 lg:flex">
@@ -39,7 +39,7 @@ export default function Navbar() {
               >
                 <Link
                   to="/"
-                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
+                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-purple-700 hover:border-purple-700"
                 >
                   About
                 </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
               >
                 <Link
                   to="/"
-                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
+                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-purple-700 hover:border-purple-700"
                 >
                   Skills
                 </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
               >
                 <Link
                   to="/"
-                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
+                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-purple-700 hover:border-purple-700"
                 >
                   Projects
                 </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
               >
                 <Link
                   to="/"
-                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
+                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-purple-700 hover:border-purple-700"
                 >
                   Experience
                 </Link>
@@ -111,7 +111,7 @@ export default function Navbar() {
               >
                 <Link
                   to="/"
-                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-yellow-300 hover:border-yellow-300"
+                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-purple-700 hover:border-purple-700"
                 >
                   Contact Me
                 </Link>
@@ -141,7 +141,7 @@ export default function Navbar() {
             }}
           >
             <a href="https://kaustuvkaran01.netlify.app" target="_blank" rel="noreferrer">
-              <button className="px-8 py-3 font-semibold rounded border-2 border-basic-blue text-basic-blue outline-none">
+              <button className="px-8 py-3 font-semibold rounded border-2 border-purple-700 text-basic-blue outline-none">
                 Resume
               </button>
             </a>

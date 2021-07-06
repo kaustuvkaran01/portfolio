@@ -24,7 +24,7 @@ export default function Languages() {
 		</div>
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-coolGray-900 dark:text-coolGray-100 bg-gray-50 lg:w-1/5">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-yellow-400">
-				<img src={jssvg} atl="js svg"/>
+				<img src={jssvg} alt="js svg"/>
 			</div>
 			<div class="flex flex-col justify-center align-middle">
 				<p class="text-3xl font-semibold leading-none">JavaScript</p>

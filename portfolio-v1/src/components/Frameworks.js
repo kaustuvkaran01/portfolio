@@ -7,7 +7,6 @@ import npm from '../images/frames/npm.svg'
 import mongo from '../images/frames/mongo.svg'
 import graphql from '../images/frames/graphql.svg'
 import redux from '../images/frames/redux.svg'
-import scikit from '../images/frames/scikit.svg'
 
 export default function Frameworks() {
   return (

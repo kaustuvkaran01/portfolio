@@ -2,7 +2,8 @@ import React from "react";
 import heroimg from '../images/heroimg.JPG';
 import Typewriter from "typewriter-effect";
 import {Link} from 'react-router-dom'
-import {FaGithub} from 'react-icons/fa';
+// import {FaGithub} from 'react-icons/fa';
+import githubgif from '../images/frames/githubgif.gif'
 
 export default function Hero() {
   return (
@@ -43,8 +44,8 @@ export default function Hero() {
               <br class="hidden md:inline lg:no-hidden" />Love to do stuff
             </p>
             <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <button class="px-8 py-3 text-lg font-semibold rounded bg-yellow-400 text-black"><Link>Let's Connect</Link></button>
-              <button class="px-8 py-3 text-lg font-semibold border rounded border-yellow-300 flex-row"><Link>Github <FaGithub /></Link></button>
+              <button class="px-8 py-3 text-lg font-semibold rounded bg-purple-700 text-black w-1/2"><Link>Let's Connect</Link></button>
+              <button class="px-8 py-3 text-lg font-semibold border rounded border-8 border-purple-700  flex flex-row justify-evenly w-1/2">Github <img className="h-8" src={githubgif} alt="github"/></button>
             </div>
           </div>
           <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
