@@ -3,7 +3,7 @@ import heroimg from '../images/heroimg.JPG';
 import Typewriter from "typewriter-effect";
 import {Link} from 'react-router-dom'
 // import {FaGithub} from 'react-icons/fa';
-import githubgif from '../images/frames/githubgif.gif'
+import githubgif from '../images/frames/git.svg'
 
 export default function Hero() {
   return (
@@ -45,11 +45,11 @@ export default function Hero() {
             </p>
             <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <button class="px-8 py-3 text-lg font-semibold rounded bg-purple-700 text-black w-1/2"><Link>Let's Connect</Link></button>
-              <button class="px-8 py-3 text-lg font-semibold border rounded border-8 border-purple-700  flex flex-row justify-evenly w-1/2">Github <img className="h-8" src={githubgif} alt="github"/></button>
+              <button class="px-8 py-3 text-lg font-semibold border rounded border-8 border-purple-700  flex flex-row justify-evenly w-1/2">Github <img className="h-8 bg-opacity-0" src={githubgif} alt="github"/></button>
             </div>
           </div>
           <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-            <img src={heroimg} alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+            <img src={heroimg} alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-3xl" />
           </div>
         </div>
       </section>
