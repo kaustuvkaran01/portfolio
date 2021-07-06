@@ -2,7 +2,7 @@ import React from 'react';
 
 import reactgif from '../images/frames/reactsvg.svg'
 import nodesvg from '../images/frames/nodesvg.svg'
-import express from '../images/frames/express-js-logo.png'
+// import express from '../images/frames/express-js-logo.png'
 import npm from '../images/frames/npm.svg'
 import mongo from '../images/frames/mongo.svg'
 import graphql from '../images/frames/graphql.svg'
@@ -17,7 +17,7 @@ export default function Frameworks() {
 		<h2 class="text-3xl font-bold">Libraries/Frameworks</h2>
 		<div class="flex flex-wrap sm:flex-col lg:flex-row justify-center lg:justify-evenly ">
 			<img src={mongo} alt="mongo" />
-			<img className="h-6 mt-4" src={express} alt="express" />
+			
 			<img src={reactgif} alt="react" />
 			<img src={graphql} alt="graphql" />
 			<img src={redux} alt="redux" />

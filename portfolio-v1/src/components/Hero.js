@@ -43,9 +43,9 @@ export default function Hero() {
             <p class="mt-6 mb-8 text-lg sm:mb-12">Been doing magic with code since 2017
               <br class="hidden md:inline lg:no-hidden" />Love to do stuff
             </p>
-            <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <button class="px-8 py-3 text-lg font-semibold rounded bg-purple-700 text-black w-1/2"><Link>Let's Connect</Link></button>
-              <button class="px-8 py-3 text-lg font-semibold border rounded border-8 border-purple-700  flex flex-row justify-evenly w-1/2">Github <img className="h-8 bg-opacity-0" src={githubgif} alt="github"/></button>
+            <div class="flex flex-col space-y-4 sm:items-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start sm:justify-center">
+              <Link class="px-8 py-3 text-lg font-semibold rounded bg-purple-700 text-black sm:justify-center">Let's Connect</Link>
+              <Link class="px-8 py-3 text-lg font-semibold border rounded border-8 border-purple-700 flex flex-row justify-center">Github <img className="h-8 bg-opacity-0" src={githubgif} alt="github"/></Link>
             </div>
           </div>
           <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
