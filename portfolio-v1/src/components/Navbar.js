@@ -7,10 +7,9 @@ import logo from "../images/site-logo.png";
 import Sidebar from "./Sidebar/Sidebar";
 
 export default function Navbar() {
-  const bg = "bg-gray-200"
   return (
     <div>
-        <header className="px-8 text-basic-blue bg-gray-200 fixed z-50 pt-2 w-full">
+        <header className="px-8 text-basic-blue bg-gray-200 fixed z-50 py-2 w-full shadow-md">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex">
             <Link to="/" className="flex items-center p-2">
