@@ -2,11 +2,12 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-// import logo from "../assets/logo.svg";
+import logo from "../images/site-logo.png";
 // import Pdf from "../assets/resume-website.pdf";
 import Sidebar from "./Sidebar/Sidebar";
 
 export default function Navbar() {
+  const bg = "bg-gray-200"
   return (
     <div>
         <header className="px-8 text-basic-blue bg-gray-200 fixed z-50 pt-2 w-full">
@@ -22,7 +23,7 @@ export default function Navbar() {
                   stiffness: 25,
                 }}
               >
-                <img src="https://source.unsplash.com/collection/190727/1600x900" className="w-8 h-8 text-purple-700" alt="" />
+                <img src={logo} className="w-12 h-12 text-purple-700" alt="" />
               </motion.span>
             </Link>
             <ul className="items-stretch hidden space-x-3 lg:flex">
