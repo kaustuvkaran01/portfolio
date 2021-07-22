@@ -14,27 +14,28 @@ export default function Hero() {
             <h1 class="text-5xl font-bold leading-none sm:text-6xl">Hi!<br /> I am Kaustuv!<br />
               <span class="dark:text-yellow-400">I write</span>
               <Typewriter
+                options={{loop:true}}
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString('<strong><span style={{color:"neon"}} >JavaScript</span></strong>')
+                    .typeString('<strong><span class="text-yellow-500">JavaScript</span></strong>')
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("C++")
+                    .typeString('<strong><span class="text-blue-400">C++</span></strong>')
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("R")
+                    .typeString('<strong><span class="text-blue-500">React.js</span></strong>')
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("HTML")
+                    .typeString('<strong><span class="text-green-700">Python</span></strong>')
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("CSS")
+                    .typeString('<strong><span class="text-blue-900">R</span></strong>')
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("React.Js")
+                    .typeString('<strong><span class="text-blue-400">HTML</span></strong>')
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("Python")
+                    .typeString('<strong><span class="text-red-500">CSS</span></strong>')
                     .pauseFor(1000)
                     .start();
                 }}
