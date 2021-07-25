@@ -18,25 +18,25 @@ export default function Hero() {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString('<strong><span class="text-yellow-500">JavaScript</span></strong>')
-                    .pauseFor(1000)
+                    .pauseFor(500)
                     .deleteAll()
                     .typeString('<strong><span class="text-blue-400">C++</span></strong>')
-                    .pauseFor(1000)
+                    .pauseFor(500)
                     .deleteAll()
                     .typeString('<strong><span class="text-blue-500">React.js</span></strong>')
-                    .pauseFor(1000)
+                    .pauseFor(500)
                     .deleteAll()
                     .typeString('<strong><span class="text-green-700">Python</span></strong>')
-                    .pauseFor(1000)
+                    .pauseFor(500)
                     .deleteAll()
                     .typeString('<strong><span class="text-blue-900">R</span></strong>')
-                    .pauseFor(1000)
+                    .pauseFor(500)
                     .deleteAll()
-                    .typeString('<strong><span class="text-blue-400">HTML</span></strong>')
-                    .pauseFor(1000)
+                    .typeString('<strong><span class="text-yellow-400">HTML</span></strong>')
+                    .pauseFor(500)
                     .deleteAll()
                     .typeString('<strong><span class="text-red-500">CSS</span></strong>')
-                    .pauseFor(1000)
+                    .pauseFor(500)
                     .start();
                 }}
               />
