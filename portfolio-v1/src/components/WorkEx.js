@@ -10,7 +10,7 @@ export default function WorkEx() {
       "desc":"Face unmasking using GANs and LSTMs"
     },
     {
-      "title":"Researcher Assisstant",
+      "title":"Researcher Assistant",
       "date":"27 July 2021",
       "org":"Charles University, Prague, Czech Republic",
       "desc":"Mutli modal Neural Machine Translation"
