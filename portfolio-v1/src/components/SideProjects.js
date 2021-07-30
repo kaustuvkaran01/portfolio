@@ -30,10 +30,10 @@ export default function SideProjects() {
       live: "https://netflix-look-alike-frontend.netlify.app/",
     },
     {
-      title: "First project",
-      desc: "Something random is better than nothing at all but help me god for I am dying",
-      github: "https://www.kaustuvkaran01.netlify.app",
-      live: "https://www.kaustuvkaran01.netlify.app",
+      title: "Wildfire Tracker",
+      desc: "Tracker based on NASA's Wildfire API created using React.js",
+      github: "https://github.com/kaustuvkaran01/wildfire-tracker",
+      live: "https://track-wildfire-nasa.netlify.app",
     },
   ];
 
