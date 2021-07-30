@@ -13,10 +13,10 @@ export default function MainProjects() {
     },
     {
       cat: "",
-      title: "First project",
-      desc: "Our Father, who art in Heaven, Hallowed be Thy name: Thy Kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us. Lead us not into temptations; but deliver us from the evil ones for Thine is the    Kingdom, the Power and the glory for ever and ever.    ",
-      github: "https://github.com",
-      live: "https://github.com",
+      title: "CodeRED",
+      desc: "Locates the nearest clean washrooms and medical supply stores to help you in times of need on the go.",
+      github: "https://github.com/kaustuvkaran01/CodeRED",
+      live: "https://fathomless-anchorage-82136.herokuapp.com/",
     },
     {
       cat: "",
@@ -72,12 +72,12 @@ export default function MainProjects() {
                         </a>
                         <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-400">
                           <a href={project.github}>
-                            <VscGithubAlt size={20} />
+                            <VscGithubAlt size={25} />
                           </a>
                         </span>
                         <span class="text-gray-400 inline-flex items-center leading-none text-sm">
                           <a href={project.live}>
-                            <FaExternalLinkAlt />
+                            <FaExternalLinkAlt size={20}/>
                           </a>
                         </span>
                       </div>

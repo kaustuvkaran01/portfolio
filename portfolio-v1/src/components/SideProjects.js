@@ -6,28 +6,28 @@ import { VscGithubAlt } from "react-icons/vsc";
 export default function SideProjects() {
   const projects = [
     {
-      title: "First project",
-      desc: "Something random is better than nothing at all but help me god for I am dying",
-      github: "https://www.kaustuvkaran01.netlify.app",
-      live: "https://www.kaustuvkaran01.netlify.app",
+      title: "KTOPSIS",
+      desc: "A tool to perform TOPSIS Analysis on a dataset made in python",
+      github: "https://github.com/kaustuvkaran01/ktopsis",
+      live: "https://pypi.org/project/ktopsis/",
     },
     {
-      title: "First project",
-      desc: "Something random is better than nothing at all but help me god for I am dying",
-      github: "https://www.kaustuvkaran01.netlify.app",
-      live: "https://www.kaustuvkaran01.netlify.app",
+      title: "Hangman",
+      desc: "A fun hangman game for programmers to test their knowledge of programming languages",
+      github: "https://github.com/kaustuvkaran01/Hangman",
+      live: "https://kaustuvkaran01-hangman.netlify.app/",
     },
     {
-      title: "First project",
-      desc: "Something random is better than nothing at all but help me god for I am dying",
-      github: "https://www.kaustuvkaran01.netlify.app",
-      live: "https://www.kaustuvkaran01.netlify.app",
+      title: "Tic Tac Toe",
+      desc: "The fun game of tic tac toe with an unbeatable AI",
+      github: "https://github.com/kaustuvkaran01/tic-tac-toe-js-ai",
+      live: "https://kaustuvkaran01-tic-tac-toe.netlify.app/",
     },
     {
-      title: "First project",
-      desc: "Something random is better than nothing at all but help me god for I am dying",
-      github: "https://www.kaustuvkaran01.netlify.app",
-      live: "https://www.kaustuvkaran01.netlify.app",
+      title: "Netflix Clone Frontend",
+      desc: "A frontend clone of the popular OTT service platform, Netflix using React.js and styled-components",
+      github: "https://github.com/kaustuvkaran01/netflix-look-alike",
+      live: "https://netflix-look-alike-frontend.netlify.app/",
     },
     {
       title: "First project",
@@ -66,7 +66,7 @@ export default function SideProjects() {
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
                           {project.title}
                         </h1>
-                        <p class="leading-relaxed mb-3 text-left line-clamp-3">
+                        <p class="leading-relaxed mb-3 text-center line-clamp-3">
                           {project.desc}
                         </p>
                         <a

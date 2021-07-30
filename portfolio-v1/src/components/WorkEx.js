@@ -4,22 +4,28 @@ export default function WorkEx() {
 
   const jobs = [
     {
-      "title":"Researcher",
-      "date":"11 June 2021",
+      "title":"UG Researcher",
+      "date":"8 June 2021",
       "org":"Samsung PRISM Program",
       "desc":"Face unmasking using GANs and LSTMs"
     },
     {
-      "title":"Researcher",
-      "date":"11 June 2021",
-      "org":"Samsung PRISM Program",
+      "title":"Researcher Assisstant",
+      "date":"27 July 2021",
+      "org":"Charles University, Prague, Czech Republic",
+      "desc":"Mutli modal Neural Machine Translation"
+    },
+    {
+      "title":"Web Development Intern",
+      "date":"11 June 2020",
+      "org":"Kadam",
       "desc":"Face unmasking using GANs and LSTMs"
     },
     {
-      "title":"Researcher",
-      "date":"11 June 2021",
-      "org":"Samsung PRISM Program",
-      "desc":"Face unmasking using GANs and LSTMs"
+      "title":"Web Development Intern",
+      "date":"11 June 2020",
+      "org":"Patiala Municipal Corporation",
+      "desc":"Built a cloud based slum survey app and admin portal to gather and organize census data of slums in the city in React.js, Firebase, Firestore and Android"
     },
   ]
   return (
