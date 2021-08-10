@@ -39,7 +39,7 @@ export default function SideProjects() {
       title: "Currency App",
       desc: "App to insert bill and amount given by the customer which returns the number of bills of every denomination to be returned created using React.js",
       github: "https://github.com/kaustuvkaran01/currency-app",
-      live: "https://denomination-breakdown.netlify.app",
+      live: "https://denomination-breakdown.netlify.app/",
     }
   ];
 
