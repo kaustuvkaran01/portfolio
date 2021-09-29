@@ -8,14 +8,14 @@ import et from "../images/project-images/ET.png";
 
 export default function MainProjects() {
 	const projects = [
-		{
-			cat: "",
-			title: "UBlog",
-			desc: "Social Media App for programmers to share their love for all things code built using MERN + ApolloGraphQL.",
-			github: "https://github.com/kaustuvkaran01/social-media-app-graphql",
-			live: "https://www.youtube.com/watch?v=faVKc1n89rU",
-			img: "https://dummyimage.com/720x400",
-		},
+		// {
+		// 	cat: "",
+		// 	title: "UBlog",
+		// 	desc: "Social Media App for programmers to share their love for all things code built using MERN + ApolloGraphQL.",
+		// 	github: "https://github.com/kaustuvkaran01/social-media-app-graphql",
+		// 	live: "https://www.youtube.com/watch?v=faVKc1n89rU",
+		// 	img: "https://dummyimage.com/720x400",
+		// },
 		{
 			cat: "",
 			title: "Leaf Disease Detector",
