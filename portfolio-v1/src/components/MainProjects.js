@@ -2,14 +2,27 @@ import React from "react";
 import { VscGithubAlt } from "react-icons/vsc";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
+import ldd from "../images/project-images/LDD.png";
+import cred from "../images/project-images/CodeRED.png";
+import et from "../images/project-images/ET.png";
+
 export default function MainProjects() {
 	const projects = [
 		{
 			cat: "",
-			title: "First project",
-			desc: "This is something something something something something something something something something something something",
-			github: "https://github.com",
-			live: "https://github.com",
+			title: "UBlog",
+			desc: "Social Media App for programmers to share their love for all things code built using MERN + ApolloGraphQL.",
+			github: "https://github.com/kaustuvkaran01/social-media-app-graphql",
+			live: "https://www.youtube.com/watch?v=faVKc1n89rU",
+			img: "https://dummyimage.com/720x400",
+		},
+		{
+			cat: "",
+			title: "Leaf Disease Detector",
+			desc: "Website hosting a Deep Learning based tomato leaf disease predictor with information about various diseases",
+			github: "https://github.com/kaustuvkaran01/leaf-disease-detector",
+			live: "https://www.youtube.com/watch?v=faVKc1n89rU",
+			img: ldd,
 		},
 		{
 			cat: "",
@@ -17,6 +30,7 @@ export default function MainProjects() {
 			desc: "Locates the nearest clean washrooms and medical supply stores to help you in times of need on the go.",
 			github: "https://github.com/kaustuvkaran01/CodeRED",
 			live: "https://fathomless-anchorage-82136.herokuapp.com/",
+			img: cred,
 		},
 		{
 			cat: "",
@@ -24,6 +38,7 @@ export default function MainProjects() {
 			desc: "Web app to track your daily transactions. Built using React.js, ContextAPI, MongoDB, Express.js and Node.js",
 			github: "https://github.com/kaustuvkaran01/Expense-tracker",
 			live: "https://github.com",
+			img: et,
 		},
 	];
 	return (
@@ -38,7 +53,7 @@ export default function MainProjects() {
 									<div class="h-full border-2 border-gray-300 border-opacity-60 rounded-lg overflow-hidden shadow-2xl">
 										<img
 											class="lg:h-48 md:h-36 w-full object-cover object-center"
-											src="https://dummyimage.com/720x400"
+											src={project.img}
 											alt="blog"
 										/>
 										<div class="p-6">

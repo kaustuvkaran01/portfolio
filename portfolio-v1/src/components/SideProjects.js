@@ -62,7 +62,7 @@ export default function SideProjects() {
 							<h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
 								Other Notable Projects
 							</h1>
-							<p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+							<p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0 hidden">
 								Some of my other notable projects that are equal in significance
 							</p>
 						</div>
