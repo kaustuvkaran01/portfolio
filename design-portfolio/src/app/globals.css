@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #111111;
+  --foreground: #f4f4f5;
+  --muted: #a1a1aa;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --surface-0: #111111;
+  --surface-1: #171717;
+  --surface-2: #1d1d1d;
+  --surface-3: #090909;
+  --surface-inverse: #f4f4f5;
+  --text-inverse: #09090b;
+  --grid-line: rgba(255, 255, 255, 0.03);
+  --spotlight: rgba(255, 0, 214, 0.14);
+  --hero-glow: rgba(255, 255, 255, 0.18);
+  --hero-glow-soft: rgba(255, 255, 255, 0.3);
+  --shine-line: rgba(255, 255, 255, 0.04);
+  --code-bg: rgba(0, 0, 0, 0.8);
+  --code-border: rgba(34, 211, 238, 0.3);
+  --shadow-heavy: 0 24px 60px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 18px 60px rgba(0, 0, 0, 0.25);
+  --tag-bg: #27272a;
+  --tag-text: #d4d4d8;
+  --cyan: #67e8f9;
+  --cyan-strong: #22d3ee;
+  --accent: #d946ef;
+  --nav-bg: rgba(17, 17, 17, 0.92);
+}
+
+:root[data-theme="light"] {
+  --background: #f6f3ee;
+  --foreground: #161616;
+  --muted: #635f5b;
+  --border: rgba(22, 22, 22, 0.1);
+  --border-strong: rgba(22, 22, 22, 0.2);
+  --surface-0: #f6f3ee;
+  --surface-1: #fcfaf6;
+  --surface-2: #f1ece4;
+  --surface-3: #e9e2d7;
+  --surface-inverse: #171717;
+  --text-inverse: #faf7f2;
+  --grid-line: rgba(22, 22, 22, 0.05);
+  --spotlight: rgba(217, 70, 239, 0.1);
+  --hero-glow: rgba(255, 255, 255, 0.5);
+  --hero-glow-soft: rgba(255, 255, 255, 0.75);
+  --shine-line: rgba(255, 255, 255, 0.22);
+  --code-bg: rgba(255, 255, 255, 0.8);
+  --code-border: rgba(14, 165, 233, 0.28);
+  --shadow-heavy: 0 24px 60px rgba(82, 63, 43, 0.12);
+  --shadow-card: 0 18px 60px rgba(82, 63, 43, 0.08);
+  --tag-bg: #e7dfd3;
+  --tag-text: #3f3b37;
+  --cyan: #0369a1;
+  --cyan-strong: #0284c7;
+  --accent: #c026d3;
+  --nav-bg: rgba(246, 243, 238, 0.88);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-source-code-pro), ui-monospace, SFMono-Regular;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(217, 70, 239, 0.35);
+  color: #ffffff;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-content {
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  color: var(--foreground);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content p,
+.blog-content li {
+  color: color-mix(in srgb, var(--foreground) 74%, transparent);
+  margin: 1rem 0;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+}
+
+.blog-content a {
+  color: var(--cyan-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.blog-content code {
+  background: color-mix(in srgb, var(--surface-3) 72%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  padding: 0.15rem 0.35rem;
+}
+
+.blog-content pre {
+  background: color-mix(in srgb, var(--surface-3) 84%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  margin: 1.2rem 0;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.blog-content pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .blog-content {
+    font-size: 1.14rem;
+  }
 }
