@@ -70,17 +70,18 @@ export default function Navbar() {
             type="button"
             onClick={toggleTheme}
             className="inline-flex items-center justify-center border border-[var(--border-strong)] bg-[var(--surface-1)] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--foreground)] transition hover:-translate-y-0.5 hover:border-[var(--foreground)]"
-            aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+            aria-label="Toggle theme"
           >
             Theme
           </button>
 
-          <Link
-            href="/#experience"
+          <a
+            href="/kaustuv-karan-resume-feb-26.pdf"
+            download="Kaustuv-Karan-Resume.pdf"
             className="inline-flex items-center justify-center border border-[var(--surface-inverse)] bg-[var(--surface-inverse)] px-5 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--text-inverse)] transition hover:opacity-90"
           >
             Resume
-          </Link>
+          </a>
         </div>
       </div>
     </motion.nav>

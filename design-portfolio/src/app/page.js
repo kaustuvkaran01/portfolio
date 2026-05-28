@@ -1,81 +1,57 @@
 
 import Link from "next/link";
 import ProjectCards from "@/components/ProjectCards";
+import Image from "next/image";
+import heroImage from "@/images/heroimg.jpg";
 
 const experienceItems = [
-  "Architecting microservices for secure transaction processing using Spring Boot and distributed systems design.",
-  "Optimizing database queries and runtime hotspots to reduce end-to-end response times by nearly 30%.",
-  "Collaborating with frontend and platform teams to ship modern React interfaces alongside resilient Java services.",
+  "Improved turnaround time of two high-volume APIs by 60% and 83%, cutting user journey time by 10 seconds.",
+  "Improved three React services by 90% (15s to 1.57s) via lazy loading and refactoring.",
+  "Built and launched a React + Spring Boot product with an 8000-user pilot.",
+  "Introduced Factory Design Pattern with logging, metrics, and anomaly detection for better scalability.",
+  "Refactored 100+ Java classes using Lombok, removing 3400 lines across three services.",
+  "Automated dependency upgrades and deployments across 25 repositories, saving 100+ hours yearly.",
+];
+
+const researchItems = [
+  "Built an end-to-end facial image reconstruction pipeline using GANs and OpenCV.",
+  "Prepared a large CelebA-based dataset and tuned a GAN to generate realistic reconstructed faces.",
+];
+
+const achievements = [
+  "Secure Coding Championship: Ranked 8th out of 600 globally (American Express, Oct 2023).",
+  "GCST Hackathon: Ranked 1st out of 800 globally (American Express, Aug 2023).",
+  "Smart India Hackathon: Evaluator (2025), National Winner (2019), Intra College Winner (2020).",
 ];
 
 const projectCards = [
   {
-    title: "Nexus Core",
+    title: "Leaf Disease Detector",
     description:
-      "High-throughput event streaming platform built for real-time financial workflows and resilient back-pressure handling.",
-    tags: ["Spring Cloud", "Kafka"],
-    accent: "from-zinc-700 via-zinc-950 to-zinc-900",
-    preview: "Code architecture for low-latency pipelines",
-  },
-  {
-    title: "Aether UI",
-    description:
-      "Design system and component library focused on technical products, accessibility, and crisp developer ergonomics.",
-    tags: ["React", "Tailwind"],
+      "Website hosting a deep learning based tomato leaf disease predictor with practical disease information for growers.",
+    tags: ["Deep Learning", "Computer Vision"],
     accent: "from-zinc-800 via-zinc-900 to-black",
-    preview: "Composable dashboards with dense data views",
+    preview: "AI-powered crop disease prediction interface",
   },
   {
-    title: "Vault Secure",
+    title: "CodeRED",
     description:
-      "Self-hosted secrets management tooling powered by strong encryption and infrastructure-first deployment controls.",
-    tags: ["Go", "Docker"],
-    accent: "from-zinc-600 via-zinc-950 to-black",
-    preview: "Encrypted storage with operational simplicity",
+      "Locates nearby clean washrooms and medical supply stores to help users in urgent situations on the go.",
+    tags: ["Maps", "Emergency Utility"],
+    accent: "from-zinc-700 via-zinc-900 to-zinc-950",
+    preview: "Geo-first utility for time-critical needs",
   },
   {
-    title: "Pulse Stream",
+    title: "Expense Tracker",
     description:
-      "Distributed telemetry stream processor for observability pipelines with adaptive buffering and query-time rollups.",
-    tags: ["Java", "Redis"],
-    accent: "from-zinc-700 via-zinc-900 to-black",
-    preview: "Live metrics over resilient stream partitions",
-  },
-  {
-    title: "Orbit Auth",
-    description:
-      "Identity and session service with policy-aware access control, audit trails, and secure token rotation workflows.",
-    tags: ["Node", "PostgreSQL"],
-    accent: "from-zinc-800 via-zinc-950 to-zinc-900",
-    preview: "Authorization flows built for enterprise scale",
-  },
-  {
-    title: "Canvas Ops",
-    description:
-      "Internal operations dashboard for release tracking, failure triage, and performance drill-down across squads.",
-    tags: ["React", "GraphQL"],
-    accent: "from-zinc-600 via-zinc-900 to-zinc-950",
-    preview: "Unified operational visibility for fast teams",
-  },
-  {
-    title: "Nimbus Deploy",
-    description:
-      "Progressive deployment control plane enabling canary rollouts, automated rollback signals, and environment parity checks.",
-    tags: ["Kubernetes", "AWS"],
+      "Web app to track daily transactions. Built with React.js, ContextAPI, MongoDB, Express.js, and Node.js.",
+    tags: ["React.js", "MERN"],
     accent: "from-zinc-700 via-zinc-950 to-black",
-    preview: "Confident releases with safer production gates",
-  },
-  {
-    title: "Ledger Flow",
-    description:
-      "Transaction reconciliation engine with deterministic matching rules, exception workflows, and SLA-first processing.",
-    tags: ["Spring Boot", "Kafka"],
-    accent: "from-zinc-600 via-zinc-900 to-zinc-950",
-    preview: "Reconciliation accuracy at financial throughput",
+    preview: "Personal finance tracker with MERN architecture",
   },
 ];
 
-const techStack = ["Java", "Spring", "React", "AWS", "Kubernetes"];
+const techStack = ["React.js", "Spring Boot", "Java", "Couchbase", "Elasticsearch"];
 
 export default function Home() {
   return (
@@ -123,17 +99,14 @@ export default function Home() {
           <div className="relative border border-[var(--border-strong)] bg-[var(--surface-3)] p-3 shadow-[var(--shadow-heavy)]">
             <div className="absolute -left-3 top-3 h-full w-full border border-[var(--border)]" />
             <div className="relative flex aspect-[4/5] w-full min-w-[290px] max-w-[390px] items-end overflow-hidden border border-[var(--border)] bg-[radial-gradient(circle_at_top,var(--hero-glow),transparent_24%),linear-gradient(180deg,var(--surface-1)_0%,var(--surface-3)_100%)] px-5 pb-5 pt-6">
-              <div className="absolute inset-x-8 top-7 h-40 rounded-full bg-[radial-gradient(circle,var(--hero-glow-soft),transparent_70%)] blur-2xl" />
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,var(--shine-line)_50%,transparent_100%)] opacity-60" />
-              <div className="absolute inset-x-6 top-8 flex items-center justify-center">
-                <div className="relative flex h-64 w-64 items-center justify-center rounded-full border border-[var(--border-strong)] bg-[radial-gradient(circle_at_50%_35%,var(--hero-glow),var(--surface-3)_70%)] shadow-[0_0_80px_rgba(255,255,255,0.08)]">
-                  <div className="absolute top-11 h-20 w-20 rounded-full border border-[var(--border-strong)] bg-[var(--surface-3)]" />
-                  <div className="absolute bottom-10 h-28 w-40 rounded-[50%] border border-[var(--border-strong)] bg-[var(--surface-3)]" />
-                  <span className="relative mt-16 font-mono text-4xl font-semibold tracking-[0.3em] text-[var(--foreground)]">
-                    KK
-                  </span>
-                </div>
-              </div>
+              <Image
+                src={heroImage}
+                alt="Kaustuv Karan portrait"
+                fill
+                sizes="(max-width: 1024px) 80vw, 390px"
+                className="object-cover object-center"
+                priority
+              />
               <div className="relative z-10 w-full border border-[var(--code-border)] bg-[var(--code-bg)] px-4 py-3 font-mono text-xs text-[var(--cyan)] shadow-[0_0_25px_rgba(34,211,238,0.12)]">
                 <span className="text-[var(--cyan-strong)]">const</span> developer = {"{"}{" "}
                 <span className="text-[var(--foreground)]">name:</span>{" "}
@@ -160,14 +133,14 @@ export default function Home() {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div>
               <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--foreground)]">
-                Software Engineer
+                Software Development Engineer 2
               </p>
               <p className="mt-2 text-sm uppercase tracking-[0.28em] text-[var(--muted)]">
                 American Express
               </p>
             </div>
             <p className="text-sm uppercase tracking-[0.3em] text-[var(--muted)]">
-              2021 - Present
+              Jan 2022 - Present
             </p>
           </div>
 
@@ -184,7 +157,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            {["Java", "Spring Boot", "Kubernetes", "PostgreSQL"].map((skill) => (
+            {["React.js", "Redux", "Jest", "Spring Boot", "JUnit5", "Couchbase", "Elasticsearch"].map((skill) => (
               <span
                 key={skill}
                 className="border border-[var(--border)] bg-[var(--tag-bg)] px-3 py-1.5 text-xs uppercase tracking-[0.2em] text-[var(--tag-text)]"
@@ -194,6 +167,72 @@ export default function Home() {
             ))}
           </div>
         </article>
+
+        <article className="mt-8 border border-[var(--border)] bg-[var(--surface-1)] p-8 shadow-[var(--shadow-card)] sm:p-10">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--foreground)]">
+                Researcher
+              </p>
+              <p className="mt-2 text-sm uppercase tracking-[0.28em] text-[var(--muted)]">
+                Samsung PRISM Program
+              </p>
+            </div>
+            <p className="text-sm uppercase tracking-[0.3em] text-[var(--muted)]">
+              May 2021 - Dec 2021
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5">
+            {researchItems.map((item) => (
+              <div
+                key={item}
+                className="flex gap-4 border-b border-[var(--border)] pb-5 text-[var(--foreground)]/76 last:border-b-0 last:pb-0"
+              >
+                <span className="mt-1 text-lg leading-none text-[var(--muted)]">{">"}</span>
+                <p className="max-w-4xl text-base leading-8">{item}</p>
+              </div>
+            ))}
+          </div>
+        </article>
+      </section>
+
+      <section className="relative mx-auto max-w-7xl px-6 py-4 md:px-10 lg:px-16">
+        <div className="grid gap-6 lg:grid-cols-2">
+          <article className="border border-[var(--border)] bg-[var(--surface-1)] p-8 shadow-[var(--shadow-card)] sm:p-10">
+            <p className="text-sm uppercase tracking-[0.32em] text-[var(--muted)]">
+              Education
+            </p>
+            <h3 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-[var(--foreground)]">
+              Bachelor of Engineering
+            </h3>
+            <p className="mt-3 text-lg text-[var(--foreground)]/82">
+              Computer Engineering
+            </p>
+            <p className="mt-4 text-base leading-8 text-[var(--foreground)]/74">
+              Thapar Institute of Engineering and Technology, Patiala, Punjab
+            </p>
+            <p className="mt-4 text-base leading-8 text-[var(--foreground)]/74">
+              August 2018 - July 2022
+            </p>
+            <p className="mt-3 text-base leading-8 text-[var(--foreground)]/74">
+              CGPA: 8.9 / 10.00 - Received Merit Based Scholarship
+            </p>
+          </article>
+
+          <article className="border border-[var(--border)] bg-[var(--surface-1)] p-8 shadow-[var(--shadow-card)] sm:p-10">
+            <p className="text-sm uppercase tracking-[0.32em] text-[var(--muted)]">
+              Achievements
+            </p>
+            <div className="mt-6 grid gap-4">
+              {achievements.map((item) => (
+                <p key={item} className="text-base leading-8 text-[var(--foreground)]/78">
+                  {item}
+                </p>
+              ))}
+            </div>
+          </article>
+        </div>
       </section>
 
       <section
