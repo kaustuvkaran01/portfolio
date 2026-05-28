@@ -3,6 +3,7 @@ import Link from "next/link";
 import ProjectCards from "@/components/ProjectCards";
 import Image from "next/image";
 import heroImage from "@/images/heroimg.jpg";
+import amexLogo from "@/images/amexlogo.png";
 
 const experienceItems = [
   "Improved turnaround time of two high-volume APIs by 60% and 83%, cutting user journey time by 10 seconds.",
@@ -132,10 +133,17 @@ export default function Home() {
         <article className="border border-[var(--border)] bg-[var(--surface-1)] p-8 shadow-[var(--shadow-card)] sm:p-10">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div>
-              <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--foreground)]">
-                Software Development Engineer 2
-              </p>
-              <p className="mt-2 text-sm uppercase tracking-[0.28em] text-[var(--muted)]">
+              <div className="flex flex-wrap items-center gap-4">
+                <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--foreground)]">
+                  Software Development Engineer 2
+                </p>
+                <Image
+                  src={amexLogo}
+                  alt="American Express logo"
+                  className="h-14 w-auto shrink-0 object-contain"
+                />
+              </div>
+              <p className="mt-3 text-sm uppercase tracking-[0.28em] text-[var(--muted)]">
                 American Express
               </p>
             </div>
