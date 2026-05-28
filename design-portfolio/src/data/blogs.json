@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "slug": "future-design-systems",
+        "title": "The Future of Design Systems",
+        "description": "Exploring how AI and automation are shaping the next generation of design systems.",
+        "content": "<p>Design systems are evolving rapidly. With the advent of AI, we are seeing a shift from static component libraries to dynamic, generative design systems that can adapt to user needs in real-time.</p><h2>The Role of AI</h2><p>AI can help automate the creation of variations, test accessibility, and even generate code from design tokens.</p>",
+        "date": "Oct 12, 2025",
+        "readTime": "5 min read"
+    },
+    {
+        "id": 2,
+        "slug": "minimalism-maximalist",
+        "title": "Minimalism in a Maximalist World",
+        "description": "Why simple, clean interfaces are becoming more critical as digital noise increases.",
+        "content": "<p>In a world bombarded with information, minimalism is not just an aesthetic choice; it's a necessity for cognitive load management.</p>",
+        "date": "Nov 03, 2025",
+        "readTime": "4 min read"
+    },
+    {
+        "id": 3,
+        "slug": "react-server-components",
+        "title": "Understanding React Server Components",
+        "description": "A deep dive into the architecture and benefits of the new React paradigm.",
+        "content": "<p>React Server Components allow us to render components on the server, reducing the bundle size sent to the client and improving performance.</p>",
+        "date": "Dec 15, 2025",
+        "readTime": "8 min read"
+    },
+    {
+        "id": 4,
+        "slug": "typography-interface",
+        "title": "Typography as Interface",
+        "description": "How typeface choices can replace traditional UI elements in modern web design.",
+        "content": "<p>Typography is the voice of your design. Large, bold type can guide users through a flow just as effectively as buttons and arrows.</p>",
+        "date": "Jan 20, 2026",
+        "readTime": "6 min read"
+    }
+]
