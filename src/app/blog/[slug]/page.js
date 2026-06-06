@@ -1,6 +1,6 @@
 
-import { getBlogBySlug, getBlogs } from '@/lib/blog';
-import { notFound } from 'next/navigation';
+import { getBlogBySlug, getBlogs } from "@/lib/blog";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
     const posts = getBlogs();
@@ -18,14 +18,14 @@ export default async function BlogPost({ params }) {
     }
 
     return (
-        <div className="min-h-screen bg-[var(--surface-0)] text-[var(--foreground)] p-8 md:p-24 font-mono">
-            <article className="max-w-3xl mx-auto">
+        <div className="min-h-screen bg-[var(--surface-0)] p-8 font-mono text-[var(--foreground)] md:p-24">
+            <article className="mx-auto max-w-3xl">
                 <header className="mb-12">
-                    <div className="flex justify-between items-center text-[var(--muted)] text-sm mb-6">
+                    <div className="mb-6 flex items-center justify-between text-sm text-[var(--muted)]">
                         <span>{post.date}</span>
                         <span>{post.readTime}</span>
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-[var(--foreground)] leading-tight">
+                    <h1 className="mb-4 text-4xl font-bold leading-tight tracking-tight text-[var(--foreground)] md:text-5xl">
                         {post.title}
                     </h1>
                     <p className="text-xl text-[var(--muted)]">

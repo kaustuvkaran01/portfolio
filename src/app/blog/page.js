@@ -1,6 +1,6 @@
 
-import { getBlogs } from '@/lib/blog';
-import BlogCards from '@/components/BlogCards';
+import { getBlogs } from "@/lib/blog";
+import BlogCards from "@/components/BlogCards";
 
 export default function Blog() {
     const blogPosts = getBlogs();

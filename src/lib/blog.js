@@ -36,13 +36,36 @@ function getAllPostFiles() {
     .filter((fileName) => fileName.endsWith(".md"));
 }
 
-function parsePostFile(fileName) {
+function sortPosts(posts) {
+  return posts.sort((a, b) => {
+    const aDate = new Date(a.rawDate).getTime();
+    const bDate = new Date(b.rawDate).getTime();
+
+    if (Number.isNaN(aDate) && Number.isNaN(bDate)) {
+      return a.title.localeCompare(b.title);
+    }
+    if (Number.isNaN(aDate)) {
+      return 1;
+    }
+    if (Number.isNaN(bDate)) {
+      return -1;
+    }
+    return bDate - aDate;
+  });
+}
+
+function stripRawDate(post) {
+  const { rawDate, ...rest } = post;
+  return rest;
+}
+
+function parsePostFile(fileName, { includeContent = false } = {}) {
   const slug = fileName.replace(/\.md$/, "");
   const fullPath = path.join(postsDirectory, fileName);
   const rawFile = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(rawFile);
 
-  return {
+  const post = {
     slug: data.slug || slug,
     title: data.title || slug,
     description: data.description || "",
@@ -50,34 +73,29 @@ function parsePostFile(fileName) {
     date: formatDate(data.date || ""),
     rawDate: data.date || "",
     readTime: data.readTime || estimateReadTime(content),
-    content: marked.parse(content),
   };
+
+  if (includeContent) {
+    post.content = marked.parse(content);
+  }
+
+  return post;
 }
 
 export function getBlogs() {
-  const posts = getAllPostFiles().map(parsePostFile);
+  const posts = getAllPostFiles().map((fileName) => parsePostFile(fileName));
 
-  return posts
-    .sort((a, b) => {
-      const aDate = new Date(a.rawDate).getTime();
-      const bDate = new Date(b.rawDate).getTime();
-
-      if (Number.isNaN(aDate) && Number.isNaN(bDate)) {
-        return a.title.localeCompare(b.title);
-      }
-      if (Number.isNaN(aDate)) {
-        return 1;
-      }
-      if (Number.isNaN(bDate)) {
-        return -1;
-      }
-      return bDate - aDate;
-    })
-    .map(({ rawDate, ...post }) => post);
+  return sortPosts(posts).map(stripRawDate);
 }
 
 export function getBlogBySlug(slug) {
-  return getBlogs().find((blog) => blog.slug === slug);
+  const fileName = `${slug}.md`;
+
+  if (!getAllPostFiles().includes(fileName)) {
+    return undefined;
+  }
+
+  return stripRawDate(parsePostFile(fileName, { includeContent: true }));
 }
 
 export function getBlogSlugs() {
